@@ -79,6 +79,13 @@ using ScheduleExample.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 11 "C:\D\practice\ScheduleExample\ScheduleExample\_Imports.razor"
+using Syncfusion.Blazor.Schedule;
+
+#line default
+#line hidden
+#nullable disable
     public partial class NavMenu : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998

@@ -80,6 +80,13 @@ using ScheduleExample.Shared;
 #line hidden
 #nullable disable
 #nullable restore
+#line 11 "C:\D\practice\ScheduleExample\ScheduleExample\_Imports.razor"
+using Syncfusion.Blazor.Schedule;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 3 "C:\D\practice\ScheduleExample\ScheduleExample\Pages\FetchData.razor"
 using ScheduleExample.Data;
 

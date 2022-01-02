@@ -10,6 +10,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Syncfusion.Blazor;
 
 namespace ScheduleExample
 {
@@ -29,11 +30,13 @@ namespace ScheduleExample
             services.AddRazorPages();
             services.AddServerSideBlazor();
             services.AddSingleton<WeatherForecastService>();
+            services.AddSyncfusionBlazor();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            // Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("NTUwNzcxQDMxMzkyZTMyMmUzMEdrSDBDTnF5aTBYbW0zMlY5QTBZQThINlRIRG42M1NvTG1LaXIyNTRPdTg9");
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

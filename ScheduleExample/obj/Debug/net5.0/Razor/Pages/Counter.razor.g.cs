@@ -79,6 +79,13 @@ using ScheduleExample.Shared;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 11 "C:\D\practice\ScheduleExample\ScheduleExample\_Imports.razor"
+using Syncfusion.Blazor.Schedule;
+
+#line default
+#line hidden
+#nullable disable
     [Microsoft.AspNetCore.Components.RouteAttribute("/counter")]
     public partial class Counter : Microsoft.AspNetCore.Components.ComponentBase
     {

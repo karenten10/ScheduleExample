@@ -263,3 +263,5 @@ Src/Inspection/InspectionBlazor/Properties/PublishProfiles/FolderProfile.pubxml
 !*.md
 *.zip
 *.jfm
+
+/obj/*/*

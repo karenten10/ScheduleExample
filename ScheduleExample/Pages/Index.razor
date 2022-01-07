@@ -1,7 +1,9 @@
 ﻿@page "/"
 
-<SfSchedule TValue="Object" SelectedDate="@(new DateTime(2022, 1, 5))" CurrentView="View.Month"
-    StartHour="07:00" EndHour="15:00" ShowWeekend="false">
+@using Syncfusion.Blazor.Schedule
+
+<SfSchedule TValue="AppointmentData" SelectedDate="@(new DateTime(2022, 1, 5))" CurrentView="View.Month"
+            StartHour="07:00" EndHour="15:00" ShowWeekend="false">
 
     <ScheduleViews>
         <ScheduleView Option="View.Day" StartHour="07:00" EndHour="15:00"></ScheduleView>
@@ -10,3 +12,19 @@
     </ScheduleViews>
 
 </SfSchedule>
+
+@code {
+    public class AppointmentData
+    {
+        public int Id { get; set; }
+        public string Subject { get; set; }
+        public string Location { get; set; }
+        public DateTime StartTime { get; set; }
+        public DateTime EndTime { get; set; }
+        public string Description { get; set; }
+        public bool IsAllDay { get; set; }
+        public string RecurrenceRule { get; set; }
+        public string RecurrenceException { get; set; }
+        public Nullable<int> RecurrenceID { get; set; }
+    }
+}
